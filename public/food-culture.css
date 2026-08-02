@@ -1,0 +1,420 @@
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(197, 197, 197, 0.219)), url("img/food-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+.navbar nav ul{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.navbar nav ul li a{
+    color: #ffffff;
+}
+
+.navbar nav ul .sign-up a{
+  background-color: #008f30;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 15px;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.con{
+    background-color: whitesmoke;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #2c3e50;
+    line-height: 1.7;
+    background-color: #ffffff;
+}
+
+#breadcrumbs {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+}
+
+#breadcrumbs a {
+    color: #8b6b4b;
+    text-decoration: none;
+}
+
+#breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.entry-title{
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    color: #1e3a2f;
+}
+
+.entry-title + p {
+    font-size: 1.1rem;
+    color: #3d5a4b;
+    border-left: 4px solid #6bc285;
+    padding-left: 1rem;
+    margin: 1rem 0 1.5rem 0;
+    font-style: italic;
+}
+
+.food-content{
+    width: 100%;
+}
+
+.single-pmeta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 0.5rem 0 1.5rem 0;
+    padding: 0.5rem 0;
+    font-size: 0.95rem;
+    color: #555;
+    border-top: 1px solid #e6dccd;
+    border-bottom: 1px solid #e6dccd;
+}
+
+.single-pmeta .author-reviewer {
+    flex: 1;
+    min-width: 200px;
+}
+
+.single-pmeta .publish_date {
+    white-space: nowrap;
+}
+
+.single-pmeta .tool-tip {
+    font-weight: 600;
+    color: #1e3a2f;
+}
+
+h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-top: 2.2rem;
+    margin-bottom: 0.75rem;
+    color: #1e3a2f;
+    border-bottom: 2px solid #e6dccd;
+    padding-bottom: 0.3rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+    margin: 0.75rem 0 1.25rem 0;
+}
+
+ul li {
+    margin-bottom: 0.25rem;
+}
+
+.featured-img img,
+.food-item img {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    aspect-ratio: 900 / 667;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.food-item {
+    overflow: hidden;
+}
+
+.food-item img {
+    margin: 1.5rem 0;
+    display: block;
+}
+
+/* ===================================================== */
+/* ===== RESPONSIVE: Tablets & Small Laptops ===== */
+/* ===================================================== */
+@media screen and (max-width: 768px) {
+    header {
+        background-position: center center;
+    }
+
+    .navbar {
+        padding: 15px 5%;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .navbar nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .navbar nav ul li a {
+        font-size: 14px;
+    }
+
+    .navbar nav ul .sign-up a {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+
+    .content {
+        padding: 1.5rem 1rem;
+    }
+
+    .entry-title {
+        font-size: 1.7rem;
+    }
+
+    .entry-title + p {
+        font-size: 1rem;
+        padding-left: 0.75rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        margin-top: 1.8rem;
+    }
+
+    ul {
+        padding-left: 1.2rem;
+    }
+
+    .featured-img img,
+    .food-item img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: auto;
+        margin: 0 0 1rem 0;
+    }
+
+    .food-item img {
+        margin: 1rem 0;
+    }
+
+    .single-pmeta {
+        font-size: 0.9rem;
+    }
+
+    #breadcrumbs {
+        font-size: 0.78rem;
+    }
+}
+
+/* ===================================================== */
+/* ===== Landscape mode on narrow screens ===== */
+/* ===================================================== */
+@media (max-width: 720px) and (orientation: landscape) {
+    .navbar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px 4%;
+        gap: 8px;
+    }
+
+    .navbar nav ul {
+        gap: 10px;
+    }
+
+    .navbar nav ul li a {
+        font-size: 12px;
+    }
+
+    .navbar nav ul .sign-up a {
+        padding: 6px 14px;
+        font-size: 11px;
+    }
+}
+
+/* ===================================================== */
+/* ===== Large Phones (430px - 768px) ===== */
+/* ===================================================== */
+@media screen and (max-width: 430px) {
+    .navbar {
+        padding: 10px 4%;
+        gap: 10px;
+    }
+
+    .navbar nav ul {
+        gap: 10px 14px;
+    }
+
+    .navbar nav ul li a {
+        font-size: 12px;
+    }
+
+    .navbar nav ul .sign-up a {
+        padding: 6px 14px;
+        font-size: 11px;
+    }
+
+    .content {
+        padding: 1rem 0.85rem;
+    }
+
+    .entry-title {
+        font-size: 1.4rem;
+    }
+
+    .entry-title + p {
+        font-size: 0.92rem;
+        padding-left: 0.6rem;
+        border-left-width: 3px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-top: 1.5rem;
+    }
+
+    ul {
+        padding-left: 1rem;
+    }
+
+    ul li {
+        font-size: 0.92rem;
+    }
+
+    .food-item p {
+        font-size: 0.95rem;
+        line-height: 1.65;
+    }
+
+    .single-pmeta {
+        font-size: 0.82rem;
+        line-height: 1.5;
+    }
+
+    #breadcrumbs {
+        font-size: 0.72rem;
+    }
+}
+
+/* ===================================================== */
+/* ===== Small Phones (375px - 430px) ===== */
+/* ===================================================== */
+@media screen and (max-width: 390px) {
+    .navbar {
+        padding: 8px 3%;
+        gap: 8px;
+    }
+
+    .navbar nav ul {
+        gap: 8px 10px;
+    }
+
+    .navbar nav ul li a {
+        font-size: 10px;
+    }
+
+    .navbar nav ul .sign-up a {
+        padding: 4px 10px;
+        font-size: 9px;
+    }
+
+    .content {
+        padding: 0.85rem 0.65rem;
+    }
+
+    .entry-title {
+        font-size: 1.2rem;
+    }
+
+    .entry-title + p {
+        font-size: 0.85rem;
+        padding-left: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.05rem;
+        margin-top: 1.2rem;
+    }
+
+    ul li {
+        font-size: 0.85rem;
+    }
+
+    .food-item p {
+        font-size: 0.88rem;
+    }
+}
+
+/* ===================================================== */
+/* ===== Very Small Screens (320px) ===== */
+/* ===================================================== */
+@media screen and (max-width: 320px) {
+    .navbar {
+        padding: 6px 2%;
+        gap: 6px;
+    }
+
+    .navbar nav ul {
+        gap: 4px 8px;
+    }
+
+    .navbar nav ul li a {
+        font-size: 8px;
+    }
+
+    .navbar nav ul .sign-up a {
+        padding: 3px 8px;
+        font-size: 8px;
+    }
+
+    .content {
+        padding: 0.65rem 0.5rem;
+    }
+
+    .entry-title {
+        font-size: 1rem;
+    }
+
+    .entry-title + p {
+        font-size: 0.78rem;
+    }
+
+    h2 {
+        font-size: 0.95rem;
+    }
+
+    ul li {
+        font-size: 0.78rem;
+    }
+
+    .food-item p {
+        font-size: 0.8rem;
+    }
+
+    .single-pmeta {
+        font-size: 0.72rem;
+    }
+
+    #breadcrumbs {
+        font-size: 0.65rem;
+    }
+}
+

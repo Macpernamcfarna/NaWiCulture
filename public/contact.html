@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Salone Culture, our mission to celebrate Sierra Leone's rich heritage, promote cultural tourism, preserve traditions, and share the stories, history, and beauty of the nation with the world.">
+    <meta name="keywords" content="Sierra Leone, heritage, culture, history, food, traditions">
+    <!-- Google Fonts & Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="/img/file_00000000c42471f4968819023d01c287.png">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact_NaWiCulture</title>
+</head>
+<body>
+
+    <!-- ========== HEADER ========== -->
+    <header>
+        <div class="navbar">
+            <i class="logo" style="color: green;">Na<em>We</em>Culture</i>
+            <nav>
+                <ul>
+                    <li><a href="languages.html">LANGUAGES</a></li>
+                    <li><a href="food-culture.html">CULTURE FOOD</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="sign-up"><a href="#">PARTNER WITH US <i class="fas fa-arrow-right"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <div class="contact-wrapper">
+        <div class="contact-grid">
+            <!-- LEFT: info (green theme, Freetown Lumley) -->
+            <div class="contact-info">
+                <div class="brand-tag"><i class="fas fa-leaf" style="margin-right: 0.4rem;"></i> naweculture · connect</div>
+                <h2>Let’s grow together</h2>
+                <p>
+                    We’re rooted in Freetown, Lumley. Reach out for collaborations, 
+                    cultural stories, or just to say hello — our doors are open.
+                </p>
+
+                <div class="info-item">
+                    <i class="fas fa-map-pin"></i>
+                    <div class="text">
+                        <strong>Visit us</strong>
+                        <span>Lumley Beach Road, Freetown<br />Sierra Leone</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div class="text">
+                        <strong>Email</strong>
+                        <span>hello@naweculture.com</span>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="text">
+                        <strong>Phone</strong>
+                        <span>+232 76 123 456</span>
+                    </div>
+                </div>
+
+                <!-- social: Twitter, LinkedIn, YouTube, Instagram -->
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- RIGHT: form -->
+            <div class="contact-form">
+                <h3>Send a message</h3>
+                <div class="subhead">
+                    <i class="fas fa-feather-alt" style="margin-right: 0.5rem; color: #3b8b6b;"></i> We reply within 42h
+                </div>
+
+                <form id="contactForm" action="/post" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName"><i class="fas fa-user"></i> Full name</label>
+                            <input type="text" id="fullName" name="name" placeholder="e.g. Isatu Kallon" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="emailAddr"><i class="fas fa-envelope"></i> Email</label>
+                            <input type="email" id="emailAddr" name="email" placeholder="isatu@example.com" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phoneNumber"><i class="fas fa-phone"></i> Phone (optional)</label>
+                        <input type="tel" id="phoneNumber" name="phone" placeholder="+232 76 123 456" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subjectLine"><i class="fas fa-tag"></i> Subject</label>
+                        <select id="subjectLine" name="subject">
+                            <option value="general">General inquiry</option>
+                            <option value="culture">Culture & events</option>
+                            <option value="support">Support</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="messageBody"><i class="fas fa-pencil-alt"></i> Message</label>
+                        <textarea id="messageBody" name="message" placeholder="Tell us about your idea or question…" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Send message
+                    </button>
+                </form>
+
+                <!-- map placeholder with Freetown Lumley -->
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i> 
+                    <span>📍 Lumley Beach, Freetown, Sierra Leone</span>
+                    <span style="font-size: 0.8rem; opacity: 0.6; margin-left: auto;"><i class="fas fa-umbrella-beach"></i> near the Atlantic</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Column 1 -->
+            <div class="footer-col">
+                <h3>Explore Sierra Leone</h3>
+                <ul>
+                    <li><a href="heritage.html">Tourist Attractions</a></li>
+                    <li><a href="heritage.html">Tours & Events</a></li>
+                    <li><a href="heritage.html">Wildlife & Nature</a></li>
+                    <li><a href="heritage.html">Culture & Heritage</a></li>
+                    <li><a href="heritage.html">Beaches</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="footer-col">
+                <h3>Travel Guide</h3>
+                <ul>
+                    <li><a href="about.html">Visa Information</a></li>
+                    <li><a href="about.html">Travel Tips</a></li>
+                    <li><a href="about.html">Currency</a></li>
+                    <li><a href="about.html">Maps</a></li>
+                    <li><a href="about.html">Tourist Guide</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="footer-col">
+                <h3>Sign up for our Newsletter!</h3>
+                <p class="small-text">
+                    Stay updated with news, events, and cultural stories.
+                </p>
+                <form class="newsletter" id="newsletterForm">
+                    <input type="text" placeholder="First name" id="name">
+                    <input type="email" name="email" placeholder="Email address" required id="email">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p id="formMessage" class="form-message"></p>
+                <br><hr>
+            
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+            <p>© 2026 Sierra Leone Culture | All Rights Reserved</p>
+            <div class="socials">
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
